@@ -24,12 +24,19 @@ It demonstrates:
 ##  Project Structure
 
  ├── color.py # Color class: hex → RGB, brightness, name 
+ 
  ├── color_analyser.py # Finds the brightest color 
+ 
  ├── css_colors.py # Handles external color name matching 
+ 
  ├── main.py # Demo runner 
+ 
  ├── color_test.py # Tests for Color 
+ 
  ├── color_analyser_test.py # Tests for ColorAnalyser 
+ 
  ├── css_colors_test.py # Tests for CSS_Colors (mocked) 
+ 
  └── README.md # This file
  
 ---
@@ -45,8 +52,8 @@ pip install requests
 ---
 
 ##  Tests
-
+```bash
 python color_test.py
 python color_analyser_test.py
 python css_colors_test.py
-
+```
