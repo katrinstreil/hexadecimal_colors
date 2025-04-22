@@ -4,6 +4,11 @@ import requests
 import CSS_Colors
 
 class Color:
+    """
+    Represents a color defined by a hexadecimal string.
+    Provides RGB components, brightness, and closest CSS color name.
+    """
+
     def __init__(self, hex_value: str):
         # normalize casing
         self.hex_value = hex_value.upper()
