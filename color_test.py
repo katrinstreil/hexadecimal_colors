@@ -1,5 +1,5 @@
 import unittest
-from colors import Color
+from color import Color
 
 class TestColorParsing(unittest.TestCase):
     def test_white(self):

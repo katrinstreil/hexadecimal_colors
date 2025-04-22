@@ -1,6 +1,7 @@
 
 import math
-
+import requests
+import CSS_Colors
 
 class Color:
     def __init__(self, hex_value: str):
@@ -19,7 +20,7 @@ class Color:
         return r, g, b
 
     def __str__(self):
-        return f"{self.hex_value} (r={self.r}, g={self.g}, b={self.b})"
+        return f"{self.hex_value} (r={self.r}, g={self.g}, b={self.b}), called {self.closest_css_color_name}"
 
     @property
     def brightness(self) -> float:
@@ -32,3 +33,9 @@ class Color:
             0.691 * (self.g ** 2) +
             0.068 * (self.b ** 2)
         )
+
+    @property
+    def closest_css_color_name(self):
+        return CSS_Colors().get_closest_css_color_name(self.r, self.g, self.b)
+
+
