@@ -1,7 +1,7 @@
 
 import math
 import requests
-import CSS_Colors
+from  css_colors import CSS_Colors
 
 class Color:
     """
